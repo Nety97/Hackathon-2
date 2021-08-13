@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    
+    <title>Where's Waldo</title>
+</head>
+<body>
+    <h1>Where's Waldo</h1>
+    <div class="box" id="canvas">
+        <div class="portrait img" id="portrait">
+            <input type="text" id="user" placeholder="Username" class="user">
+            <button class="play" type="submit" onclick="gameBegin()">Play</button>
+        </div>
+        <div class="waldo1 gameOff img" id="waldo1">
+            <div class="found1" id="found"></div>
+            
+            
+        </div>
+        <div class="waldo2 gameOff img" id="waldo2">
+            <div class="found2" id="found2"></div>
+        </div>
+        <div class="waldo3 gameOff img" id="waldo3">
+            <div class="found3" id="found3"></div>
+            <!-- <div class="found5" id="found3"></div> -->
+        </div>
+        <div class="waldo4 gameOff img" id="waldo4">
+            <div class="found4" id="found4"></div>
+        </div>
+        <div class="final gameOff score" id="final">
+            <h2>Score by Users</h2>
+            <div class="root" id="root"></div>
+        </div>
+        <div class="timer gameOff" id="boxTimer">
+            
+            <p  id="time"></p>
+        </div>
+        
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
